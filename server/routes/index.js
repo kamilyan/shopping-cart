@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-let adminIndexController = require('../controllers/adminIndex');
+let indexController = require('../controllers/index');
 
-router.get('/', adminIndexController.displayAdminIndexPage);
+router.get('/', indexController.displayIndexPage);
 
 module.exports = router;
